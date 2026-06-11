@@ -1,36 +1,29 @@
----  
-title: 깃헙 블로그 작성 규칙  
-date: 2026-06-11 23:50:00 +0900  
-categories: [블로그]  
-tags: [jekyll, chirpy, 블로그, 이미지, 동영상, 삽입, 시작, 깃헙, github]
----  
-<br>
+---
+title: 깃헙 블로그 작성 규칙
+date: 2026-06-11 09:00:00 +0900
+categories: [블로그]
+tags: [jekyll, chirpy, 블로그, 이미지, 동영상, 삽입, 시작]
+---
 
-**글 관리**는 `_posts` 폴더에서
+**글 관리**는 `_posts` 폴더에서 합니다.
 
-파일 이름은 반드시 `연도-월-일-제목.md` 형식
+파일 이름은 반드시 `연도-월-일-제목.md` 형식입니다.
 
-글을 지우려면 해당 파일을 삭제
+글을 지우려면 해당 파일을 삭제합니다.
 
-Chirpy는 카테고리를 최대 2단계까지 지원
+Chirpy는 카테고리를 최대 2단계까지 지원합니다.
 
-`categories: [개발, 깃헙블로그]`라고 쓰면 "개발"이 상위, "깃헙블로그"가 하위
+`categories: [개발, 깃헙블로그]`라고 쓰면 "개발"이 상위, "깃헙블로그"가 하위입니다.
 
-**아카이브**는 글의 `date`(날짜)를 기준으로 연도·월별로 자동 정리
-
-<br>
+**아카이브**는 글의 `date`(날짜)를 기준으로 연도·월별로 자동 정리됩니다.
 
 ## 이미지 삽입
 
+기본 문법은 다음과 같습니다.
 
     ![이미지 설명](/assets/img/photo.jpg)
 
-
-<br>
-Chirpy는 여기에 더해 **캡션, 크기, 정렬** 같은 옵션을 붙일 수 있다.
-
-이미지 바로 아래 줄에 이렇게 적는다.
-
+Chirpy는 여기에 더해 캡션, 크기, 정렬 같은 옵션을 붙일 수 있습니다.
 
     ![이미지 설명](/assets/img/photo.jpg)
     _사진 아래 들어갈 캡션_
@@ -39,52 +32,8 @@ Chirpy는 여기에 더해 **캡션, 크기, 정렬** 같은 옵션을 붙일 
 
     ![가운데 정렬](/assets/img/photo.jpg){: .normal }
 
-
-<br>
-
-**외부 이미지** 주소(URL)만 알면 저장소에 올리지 않고 경로 자리에 `/assets/img/...` 대신 그 이미지의 전체 주소를 넣어서 바로 본문에 넣을 수 있다.
-
-캡션이나 크기 옵션도 그대로 쓸 수 있다.
-
-    ![외부 이미지](이미지 주소.jpg){: width="400" }
-    _이미지 출처: 출처 주소_
-
-<br>
-
-Chirpy에는 글마다 이미지 기준 경로를 한 번만 정해두면, 본문에서는 파일명만 써도 되는 기능이 있다. 글 머리말(front matter)에 `media_subpath`를 넣으면 된다.
-
-    ---
-    title: 깃헙 블로그 시작하기
-    date: 2026-06-11 14:00:00 +0900
-    categories: [개발, 깃헙블로그]
-    tags: [jekyll, chirpy]
-    media_subpath: /assets/img/posts/2026-06-11-github-blog-start/
-    ---
-    
-    본문에서는 이렇게 짧게:
-    
-    ![1단계](step1.png)
-    ![2단계](step2.png)
-
-<br>
-
 ## 동영상 삽입
 
-**유튜브 영상**이라면 본문에 이렇게 적는다.
+유튜브 영상이라면 본문에 다음과 같이 적습니다.
 
-    {% include embed/youtube.html id='영상ID' %}
-
-<br>
-비슷하게 다른 플랫폼도 지원함.
-
-    {% include embed/twitch.html id='영상ID' %}
-    {% include embed/bilibili.html id='영상ID' %}
-
-<br>
-**내가 직접 올린 동영상 파일**(예: `assets/video/clip.mp4`)을 넣으려면 HTML 태그를 직접 쓴다. 마크다운 본문 안에 HTML을 써도 동작함.
-
-    <video controls width="100%">
-      <source src="/assets/video/clip.mp4" type="video/mp4">
-    </video>
-
-<br>
+    {% raw %}{% include embed/youtube.html id='영상ID' %}{% endraw %}
