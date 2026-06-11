@@ -22,23 +22,23 @@ Chirpy는 카테고리를 최대 2단계까지 지원
 
 ## 이미지 삽입
 
-```
-![이미지 설명](/assets/img/photo.jpg)
-```
+
+    ![이미지 설명](/assets/img/photo.jpg)
+
 
 <br>
 Chirpy는 여기에 더해 **캡션, 크기, 정렬** 같은 옵션을 붙일 수 있다.
 
 이미지 바로 아래 줄에 이렇게 적는다.
 
-```
-![이미지 설명](/assets/img/photo.jpg)
-_사진 아래 들어갈 캡션_
 
-![크기 조절 예시](/assets/img/photo.jpg){: width="400" height="300" }
+    ![이미지 설명](/assets/img/photo.jpg)
+    _사진 아래 들어갈 캡션_
 
-![가운데 정렬](/assets/img/photo.jpg){: .normal }
-```
+    ![크기 조절 예시](/assets/img/photo.jpg){: width="400" height="300" }
+
+    ![가운데 정렬](/assets/img/photo.jpg){: .normal }
+
 
 <br>
 
@@ -46,30 +46,25 @@ _사진 아래 들어갈 캡션_
 
 캡션이나 크기 옵션도 그대로 쓸 수 있다.
 
-```
-![외부 이미지](이미지 주소.jpg){: width="400" }
-_이미지 출처: 출처 주소_
-
-```
+    ![외부 이미지](이미지 주소.jpg){: width="400" }
+    _이미지 출처: 출처 주소_
 
 <br>
 
 Chirpy에는 글마다 이미지 기준 경로를 한 번만 정해두면, 본문에서는 파일명만 써도 되는 기능이 있다. 글 머리말(front matter)에 `media_subpath`를 넣으면 된다.
 
-```
----
-title: 깃헙 블로그 시작하기
-date: 2026-06-11 14:00:00 +0900
-categories: [개발, 깃헙블로그]
-tags: [jekyll, chirpy]
-media_subpath: /assets/img/posts/2026-06-11-github-blog-start/
----
-
-본문에서는 이렇게 짧게:
-
-![1단계](step1.png)
-![2단계](step2.png)
-```
+    ---
+    title: 깃헙 블로그 시작하기
+    date: 2026-06-11 14:00:00 +0900
+    categories: [개발, 깃헙블로그]
+    tags: [jekyll, chirpy]
+    media_subpath: /assets/img/posts/2026-06-11-github-blog-start/
+    ---
+    
+    본문에서는 이렇게 짧게:
+    
+    ![1단계](step1.png)
+    ![2단계](step2.png)
 
 <br>
 
@@ -77,25 +72,19 @@ media_subpath: /assets/img/posts/2026-06-11-github-blog-start/
 
 **유튜브 영상**이라면 본문에 이렇게 적는다.
 
-```
-{% include embed/youtube.html id='영상ID' %}
-```
+    {% include embed/youtube.html id='영상ID' %}
 
 <br>
 비슷하게 다른 플랫폼도 지원함.
 
-```
-{% include embed/twitch.html id='영상ID' %}
-{% include embed/bilibili.html id='영상ID' %}
-```
+    {% include embed/twitch.html id='영상ID' %}
+    {% include embed/bilibili.html id='영상ID' %}
 
 <br>
 **내가 직접 올린 동영상 파일**(예: `assets/video/clip.mp4`)을 넣으려면 HTML 태그를 직접 쓴다. 마크다운 본문 안에 HTML을 써도 동작함.
 
-```
-<video controls width="100%">
-  <source src="/assets/video/clip.mp4" type="video/mp4">
-</video>
-```
+    <video controls width="100%">
+      <source src="/assets/video/clip.mp4" type="video/mp4">
+    </video>
 
 <br>
