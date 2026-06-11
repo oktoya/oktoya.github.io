@@ -1,0 +1,16 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* 여기부터 내 커스텀 스타일 */
+#sidebar {
+  background: #ff2965;   /* 원하는 색 */
+}
