@@ -11,8 +11,15 @@
 /* append your custom style below */
 
 #sidebar {
-/* 배경 */
+/* 배경색 */
 background: #ff2965;
+/* 배경 이미지를 넣을 때 사용 */
+/*
+background-image: url('/assets/img/sidebar-bg.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+*/
   
 /* 제목 */
   .site-title a {
