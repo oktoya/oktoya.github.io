@@ -16,10 +16,12 @@
   background-repeat: no-repeat;
   */
 
-  /* 배경이 어두우면 글자가 안 보이니 글자색도 함께 조정 */
+  /* 제목 */
+  .site-title,
   .site-title a {
     color: #cdf57d !important;
   }
+  /* 부제목 */
   .site-subtitle {
     color: #cdf57d !important;
   }
