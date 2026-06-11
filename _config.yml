@@ -38,6 +38,7 @@ social:
   email: hey@oktoya.net
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
+    - https://oktoya.net
     # The first element serves as the copyright owner's link
     # - https://twitter.com/oktoya # change to your Twitter homepage
     # - https://github.com/oktoya # change to your GitHub homepage
