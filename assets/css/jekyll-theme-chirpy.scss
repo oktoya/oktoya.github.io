@@ -10,7 +10,29 @@
 
 /* append your custom style below */
 
-/* 여기부터 내 커스텀 스타일 */
+/* ===== 사이드바 커스터마이징 ===== */
 #sidebar {
+  /* (A) 단색 배경으로 바꾸고 싶을 때 */
   background: #ff2965;   /* 원하는 색 */
+}
+  /* (B) 배경 이미지를 넣고 싶을 때 (A 대신 사용) */
+  /*
+  background-image: url('/assets/img/sidebar-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  */
+
+/* 배경이 어두우면 글자가 안 보이니 글자색도 함께 조정 */
+  .site-title a {
+    color: #cdf57d !important;
+  }
+  .site-subtitle {
+    color: ##cdf57d !important;
+  }
+  /* 메뉴 글자색 */
+  .sidebar-bottom .mode-toggle,
+  a {
+    color: #e0e0e0 !important;
+  }
 }
