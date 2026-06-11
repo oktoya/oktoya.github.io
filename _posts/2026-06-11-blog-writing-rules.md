@@ -3,6 +3,7 @@ title: 깃헙 블로그 작성 규칙
 date: 2026-06-11 23:52:00 +0900  
 categories: [블로그]  
 tags: [jekyll, chirpy, 블로그, 이미지, 동영상, 삽입, 시작]
+description: Chirpy 기반 깃헙 블로그에서 글, 이미지, 동영상 등을 작성하는 기본 규칙 정리.
 ---  
 <br>
 
