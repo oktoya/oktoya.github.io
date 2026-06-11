@@ -1,14 +1,7 @@
 ---
 ---
 
-/* prettier-ignore */
-@use 'main
-{%- if jekyll.environment == 'production' -%}
-  .bundle
-{%- endif -%}
-';
-
-/* append your custom style below */
+@import "main";
 
 /* ===== 사이드바 커스터마이징 ===== */
 #sidebar {
