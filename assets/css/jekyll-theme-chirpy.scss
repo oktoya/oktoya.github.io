@@ -9,3 +9,24 @@
 ';
 
 /* append your custom style below */
+
+#sidebar {
+/* 배경 */
+background: #ff2965;
+  
+/* 제목 */
+  .site-title a {
+    color: #cdf57d !important;
+  }
+
+/* 부제목 */
+  .site-subtitle {
+    color: #cdf57d !important;
+  }
+
+/* 메뉴 글자색 */
+  .sidebar-bottom .mode-toggle,
+  a {
+    color: #e0e0e0 !important;
+  }
+}
