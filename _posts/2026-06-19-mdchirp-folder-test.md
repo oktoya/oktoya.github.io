@@ -1,5 +1,5 @@
 ---
-title: 폴더묶음 발행구조 테스트
+title: 폴더묶음 발행구조 테스트(실패)
 date: 2026-06-19 14:00:00 +0900
 categories: [Test, Structure]
 tags: [mdchirp, jekyll, chirpy]
@@ -99,3 +99,8 @@ interface Post {
 - [ ] TOC(목차)가 우측에 생기는가
 
 이 중 **두 번째 항목(상대경로 이미지)**이 가장 중요합니다. 이게 되면 mdchirp는 폴더묶음 구조를 표준으로 확정합니다.
+
+
+
+결론: 실패 후 _posts/에 본문파일 직접 업로드 후 media subpath를 assets 내에 폴더를 만들어 지정하면 상대경로로 사용이 가능.
+이 글은 그렇게 수정한 결과물임.
