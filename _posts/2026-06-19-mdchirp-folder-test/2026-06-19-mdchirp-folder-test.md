@@ -3,6 +3,7 @@ title: 폴더묶음 발행구조 테스트
 date: 2026-06-19 14:00:00 +0900
 categories: [Test, Structure]
 tags: [mdchirp, jekyll, chirpy]
+media_subpath: /assets/img/posts/2026-06-19-mdchirp-folder-test2026-06-19-mdchirp-folder-test
 description: _posts 하위에 글제목 폴더를 만들고 index.md와 이미지를 같은 폴더에 둬서 상대경로로 렌더되는지 검증하는 글.
 pin: false
 math: false
