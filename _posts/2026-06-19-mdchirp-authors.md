@@ -27,5 +27,3 @@ media_subpath: /assets/img/posts/2026-06-19-mdchirp-authors/
 const greeting: string = "hello chirpy"
 console.log(greeting)
 ```
-
-![예시 이미지](sample.png)
