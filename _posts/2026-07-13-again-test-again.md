@@ -1,0 +1,13 @@
+---
+title: "통합테스트 글"
+date: 2026-07-13 07:45:00 +0900
+media_subpath: /assets/img/posts/again-test-again/
+---
+
+![이병헌_안돼](1.webp){: width="424" height="235" }
+
+내용이 없으면 심심해.
+
+![마우스필](마우스필.png){: width="392" height="284" }
+
+![안도 타다오](image.webp){: width="329" height="428" }
