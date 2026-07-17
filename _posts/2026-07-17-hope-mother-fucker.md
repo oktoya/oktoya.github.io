@@ -6,9 +6,6 @@ tags: ["hope", "호프", "나홍진", "연상호", "윤제균", "영화"]
 description: "극장을 나오면서 처음 든 생각이 이거였다. “씨발 내돈.”\n마치 대한민국 축구대표팀같은 영화 <호프>"
 media_subpath: /assets/img/posts/hope-mother-fucker/
 ---
-
-![호프는 얼어죽을...](image.webp)
-
 <br>
 
 극장을 나오면서 처음 든 생각이 이거였다. “씨발 내돈.”
