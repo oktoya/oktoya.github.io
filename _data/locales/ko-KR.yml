@@ -53,7 +53,7 @@ notification:
 
 post:
   written_by: By
-  posted: ""
+  posted: "게시일"
   updated: 업데이트
   words: 단어
   pageview_measure: 조회
@@ -77,7 +77,7 @@ post:
 df:
   post:
     strftime: "%Y/%m/%d"
-    dayjs: "YYYY/MM/DD"
+    dayjs: "YYYY년 MM월 DD일"
 
 # categories page
 categories:
