@@ -7,7 +7,7 @@ description: "대한민국 축구대표팀같은 영화 <호프>를 보고 왔�
 media_subpath: /assets/img/posts/hopeless-mother-fucker/
 image:
   path: image.webp
-  alt: 호프는 얼어죽을...
+  alt: 호프는 얼어죽을... 백마 탄 인물은 그냥 단역이다. 그림이 좋으니까 포스터로 쓴 것.
 ---
 
 극장을 나오면서 처음 든 생각이 이거였다. “씨발 내돈.”
