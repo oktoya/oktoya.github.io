@@ -5,6 +5,7 @@ date: 2026-06-19 14:00:00 +0900
 categories: ["Test", "Structure"]
 tags: ["mdchirp", "jekyll", "chirpy"]
 description: "_posts 하위에 글제목 폴더를 만들고 index.md와 이미지를 같은 폴더에 둬서 상대경로로 렌더되는지 검증하는 글."
+comments: false
 image:
   path: cover.png
   alt: "커버 이미지 - 상대경로 테스트"
