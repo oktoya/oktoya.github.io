@@ -1,18 +1,14 @@
 ---
-title: 폴더묶음 발행구조 테스트(실패)
+title: "폴더묶음 발행구조 테스트(실패)"
+mdchirp_id: "cf126316-8672-405d-8e45-7d765e2e0c17"
 date: 2026-06-19 14:00:00 +0900
-categories: [Test, Structure]
-tags: [mdchirp, jekyll, chirpy]
-media_subpath: /assets/img/posts/2026-06-19-mdchirp-folder-test2026-06-19-mdchirp-folder-test/
-description: _posts 하위에 글제목 폴더를 만들고 index.md와 이미지를 같은 폴더에 둬서 상대경로로 렌더되는지 검증하는 글.
-pin: false
-math: false
-mermaid: false
-toc: true
-comments: true
+categories: ["Test", "Structure"]
+tags: ["mdchirp", "jekyll", "chirpy"]
+description: "_posts 하위에 글제목 폴더를 만들고 index.md와 이미지를 같은 폴더에 둬서 상대경로로 렌더되는지 검증하는 글."
 image:
   path: cover.png
-  alt: 커버 이미지 - 상대경로 테스트
+  alt: "커버 이미지 - 상대경로 테스트"
+media_subpath: /assets/img/posts/2026-06-19-mdchirp-folder-test/
 ---
 
 ## 이 글의 목적
@@ -29,19 +25,19 @@ _posts/
     └── sample.png    ← 본문에서 상대경로로 삽입하는 이미지
 ```
 
-확인하려는 핵심 질문은 **"같은 폴더 안의 이미지를 상대경로(`sample.png`)로 참조했을 때 글에서 정상적으로 뜨는가?"** 입니다.
+확인하려는 핵심 질문은 **"같은 폴더 안의 이미지를 상대경로(**`sample.png`**)로 참조했을 때 글에서 정상적으로 뜨는가?"** 입니다.
 
 ## 1. 상대경로 이미지 (가장 중요한 검증)
 
 아래 이미지가 깨지지 않고 보이면 → **폴더묶음 방식 성공**.
 
-![상대경로 이미지 테스트](sample.png)
-_같은 폴더의 sample.png 를 상대경로로 삽입한 결과_
+![상대경로 이미지 테스트](sample.png)  
+*같은 폴더의 sample.png 를 상대경로로 삽입한 결과*
 
 ## 2. 이미지 크기 지정 (Chirpy 문법)
 
-![크기 지정 이미지](sample.png){: w="400" h="300" }
-_w / h 속성으로 크기 고정_
+![크기 지정 이미지](sample.png){: w="400" h="300" }  
+*w / h 속성으로 크기 고정*
 
 ## 3. 이미지 정렬
 
@@ -51,11 +47,11 @@ _w / h 속성으로 크기 고정_
 
 ## 4. 프롬프트 박스
 
-> 이건 info 프롬프트입니다.
-{: .prompt-info }
+> 이건 info 프롬프트입니다.  
+> {: .prompt-info }
 
-> 이건 warning 프롬프트입니다.
-{: .prompt-warning }
+> 이건 warning 프롬프트입니다.  
+> {: .prompt-warning }
 
 ## 5. 코드블록 (파일명 + 언어)
 
@@ -66,6 +62,7 @@ interface Post {
   markdown: string
 }
 ```
+
 {: file="src/types.ts" }
 
 ## 6. 인용 / 목록 / 링크
@@ -74,7 +71,8 @@ interface Post {
 
 - 순서 없는 목록 1
 - 순서 없는 목록 2
-  - 중첩 목록
+
+    - 중첩 목록
 
 1. 순서 있는 목록 1
 2. 순서 있는 목록 2
@@ -100,7 +98,5 @@ interface Post {
 
 이 중 **두 번째 항목(상대경로 이미지)**이 가장 중요합니다. 이게 되면 mdchirp는 폴더묶음 구조를 표준으로 확정합니다.
 
-
-
-결론: 실패 후 _posts/에 본문파일 직접 업로드 후 media subpath를 assets 내에 폴더를 만들어 지정하면 상대경로로 사용이 가능.
+결론: 실패 후 _posts/에 본문파일 직접 업로드 후 media subpath를 assets 내에 폴더를 만들어 지정하면 상대경로로 사용이 가능.  
 이 글은 그렇게 수정한 결과물임.
