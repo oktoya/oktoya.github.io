@@ -206,15 +206,15 @@ color-scheme: light;
 .cb-root .ccard label{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;padding:6px 0;font-size:14px;cursor:pointer}
 .cb-root .ccard input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--green)}
 .cb-root .ccard input:checked+span{color:var(--muted);text-decoration:line-through}
-.cb-root footer{text-align:center;font-size:12.5px;color:var(--muted);padding:12px 0 90px;border-top:1px solid var(--line);margin-top:8px}
-.cb-root footer b{color:var(--ink-2)}
+.cb-root .foot{text-align:center;font-size:12.5px;color:var(--muted);padding:12px 0 90px;border-top:1px solid var(--line);margin-top:8px}
+.cb-root .foot b{color:var(--ink-2)}
 .cb-root .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .cb-root .cb{container-type:inline-size;container-name:cb}
 .cb-root{margin:24px 0;border-radius:24px;padding:4px 0 1px;line-height:1.6;font-size:16px;text-align:left}
 .cb-root h1,.cb-root h2,.cb-root h3,.cb-root h4{border:0;padding:0;font-family:var(--sans);color:var(--ink)}
 .cb-root h1::before,.cb-root h2::before,.cb-root h3::before,.cb-root h1::after,.cb-root h2::after,.cb-root h3::after{content:none}
 .cb-root p{margin:0}
-.cb-root .hero p,.cb-root footer p{margin:0 0 8px}
+.cb-root .hero p,.cb-root .foot p{margin:0 0 8px}
 .cb-root blockquote{font-style:normal}
 .cb-root img{box-shadow:none}
 .cb-root a{text-decoration:none;border:0}
@@ -224,7 +224,7 @@ color-scheme: light;
 .cb-root li::before{content:none}
 .cb-root label{margin:0;font-weight:inherit}
 .cb-root input[type=checkbox]{position:static;opacity:1;appearance:auto;-webkit-appearance:checkbox}
-.cb-root footer{padding-bottom:24px}
+.cb-root .foot{padding-bottom:24px}
 </style>
 <div class="cb">
 <div class="wrap">
@@ -304,10 +304,10 @@ color-scheme: light;
 <div class="prog"><div class="track"><div class="fill" id="cFill"></div></div><span id="cText"></span><button id="cReset">초기화</button></div>
 <div class="check-grid" id="checks"></div>
 </section>
-<footer>
+<div class="foot">
 <p><b>까라비네로(Carabinero) 가스트로노미 인터랙티브 아카이브</b></p>
 <p>출처: 유튜브 채널 '은수저' — 17만원 텐동 · 가장 비싼 새우 조리법 · 최경훈 셰프 전수편<br>JTBC '냉장고를 부탁해' — 정호영 셰프의 보석 타르타르 (게스트 권성준 셰프)</p>
-</footer>
+</div>
 </div>
 </div>
 <div class="float" id="float" aria-label="실행 중인 타이머"></div>
