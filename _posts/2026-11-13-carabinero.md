@@ -467,7 +467,7 @@ document.addEventListener('keydown', e => {
   const sec = $('#recipes').getBoundingClientRect(); if (sec.bottom < 0 || sec.top > innerHeight) return;
   if (e.key==='ArrowRight') go(cur+1); if (e.key==='ArrowLeft') go(cur-1);
 });
-// touch swipe (does not fight vertical scroll)
+/* touch swipe (does not fight vertical scroll) */
 let sx=null, sy=null;
 recipeEl.addEventListener('pointerdown', e => { if (e.pointerType!=='mouse'){ sx=e.clientX; sy=e.clientY; } });
 recipeEl.addEventListener('pointerup', e => { if (sx==null) return; const dx=e.clientX-sx, dy=e.clientY-sy; sx=null; if (Math.abs(dx)>50 && Math.abs(dx)>Math.abs(dy)*1.5) go(cur + (dx<0?1:-1)); });
@@ -502,7 +502,7 @@ recipeEl.addEventListener('click', e => {
 });
 /* ---------------- TIMERS (one per preset, can run in parallel) ---------------- */
 const sel = RECIPES.map(()=>0);
-const T = {}; // key "r-i" -> {total, left, endAt, running, done}
+const T = {}; /* key "r-i" -> {total, left, endAt, running, done} */
 let soundOn = store.get('cb.sound', true), actx = null;
 const key = (r,i) => r + '-' + i;
 function st(r,i){ const k = key(r,i); if (!T[k]) T[k] = { total:RECIPES[r].timers[i].s, left:RECIPES[r].timers[i].s, endAt:0, running:false, done:false }; return T[k]; }
@@ -607,7 +607,7 @@ function showFallback(){
   $('#player').innerHTML = `<a class="fallback" href="${watchURL(v.id)}" target="_blank" rel="noopener" style="background-image:url('https://i.ytimg.com/vi/${v.id}/hqdefault.jpg')"><span class="play"><i><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></i>${msg}</span></a>`;
 }
 $('#stamps').addEventListener('click', e => {
-  const a = e.target.closest('.stamp'); if (!a || !player || !ytOK) return; // fallback: link opens YouTube at that time
+  const a = e.target.closest('.stamp'); if (!a || !player || !ytOK) return; /* fallback: link opens YouTube at that time */
   e.preventDefault();
   const s = +a.dataset.s;
   try{
