@@ -35,14 +35,14 @@ color-scheme: light;
 @container cb (max-width:640px){.cb-root .panel{padding:22px 16px}}
 .cb-root .eyebrow{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin:0 0 6px}
 .cb-root .eyebrow svg{width:14px;height:14px}
-.cb-root h1,.cb-root h2,.cb-root h3{margin:0;line-height:1.3;letter-spacing:-.01em}
+.cb-root h1,.cb-root h2,.cb-root h3,.cb-root .hd{margin:0;line-height:1.3;letter-spacing:-.01em}
 .cb-root h2{font-size:clamp(24px,4.4vw,34px);font-weight:800}
-.cb-root h2 em,.cb-root h1 em{font-style:normal;font-family:var(--serif);color:var(--accent);font-weight:700}
+.cb-root h2 em,.cb-root .hero .hd em{font-style:normal;font-family:var(--serif);color:var(--accent);font-weight:700}
 .cb-root .sub{color:var(--muted);font-size:14px;margin:8px 0 0;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .cb-root .num{font-family:var(--num);font-variant-numeric:lining-nums tabular-nums}
 .cb-root .hero{padding:36px 0 8px}
-.cb-root .hero h1{font-size:clamp(30px,6.4vw,54px);font-weight:800;margin:6px 0 14px}
-.cb-root .hero h1 .en{font-family:var(--num);font-style:italic;font-weight:500;color:var(--accent)}
+.cb-root .hero .hd{font-size:clamp(30px,6.4vw,54px);font-weight:800;margin:6px 0 14px}
+.cb-root .hero .hd .en{font-family:var(--num);font-style:italic;font-weight:500;color:var(--accent)}
 .cb-root .hero p{font-size:clamp(15px,2.2vw,18px);color:var(--ink-2);max-width:760px;margin:0}
 .cb-root .divider{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.14em;margin:28px 0 18px}
 .cb-root .divider::before,.cb-root .divider::after{content:"";flex:1;height:1px;background:var(--line-2)}
@@ -52,7 +52,7 @@ color-scheme: light;
 .cb-root .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px;display:flex;flex-direction:column;gap:6px}
 .cb-root .stat-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .cb-root .stat-big{font-family:var(--num);font-size:30px;font-weight:700;color:var(--accent);line-height:1;font-variant-numeric:lining-nums}
-.cb-root .stat h3{font-size:16px;font-weight:800}
+.cb-root .stat .hd{font-size:16px;font-weight:800}
 .cb-root .stat p{margin:0;font-size:13.5px;color:var(--ink-2)}
 .cb-root .badge{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid var(--line-2);background:var(--card-2);color:var(--gold);white-space:nowrap}
 .cb-root .badge.g{background:var(--green-soft);color:var(--green);border-color:#bcd8ca}
@@ -93,7 +93,7 @@ color-scheme: light;
 @keyframes cb-inL{from{opacity:0;transform:translateX(-18px)}}
 @media (prefers-reduced-motion:reduce){.cb-root .recipe.in-r,.cb-root .recipe.in-l{animation:none}}
 .cb-root .badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.cb-root .recipe h3{font-size:clamp(20px,3.2vw,26px);font-weight:800;margin-bottom:14px}
+.cb-root .recipe .hd{font-size:clamp(20px,3.2vw,26px);font-weight:800;margin-bottom:14px}
 .cb-root .quote{margin:0 0 18px;padding:14px 16px;border-left:3px solid var(--accent);background:var(--card-2);border-radius:0 var(--r-md) var(--r-md) 0;font-size:14.5px;color:var(--ink-2)}
 .cb-root .quote cite{display:block;margin-top:6px;font-style:normal;font-size:13px;color:var(--muted)}
 .cb-root .steps{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:14px}
@@ -105,7 +105,7 @@ color-scheme: light;
 .cb-root .tchip svg{width:13px;height:13px}
 .cb-root .tchip:hover{background:var(--accent);color:#fff}
 .cb-root .spec{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:16px}
-.cb-root .spec h4{margin:0 0 8px;font-size:12px;letter-spacing:.12em;color:var(--gold)}
+.cb-root .spec .spec-h{margin:0 0 8px;font-size:12px;letter-spacing:.12em;color:var(--gold)}
 .cb-root .spec dl{margin:0;display:grid}
 .cb-root .spec .row{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:9px 0;border-top:1px solid var(--line);font-size:13.5px}
 .cb-root .spec .row:first-child{border-top:0}
@@ -162,7 +162,7 @@ color-scheme: light;
 .cb-root .fallback .play i{width:64px;height:44px;border-radius:12px;background:#e33;display:grid;place-items:center}
 .cb-root .fallback .play i svg{width:22px;height:22px;fill:#fff}
 .cb-root .vmeta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:12px 0}
-.cb-root .vmeta h3{font-size:15px;font-weight:800}
+.cb-root .vmeta .hd{font-size:15px;font-weight:800}
 .cb-root .vmeta a{flex:none}
 .cb-root .stamps{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:14px}
 .cb-root .stamps-h{display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;color:var(--gold);margin-bottom:10px}
@@ -183,7 +183,7 @@ color-scheme: light;
 @container cb (min-width:860px){.cb-root .taste-grid{grid-template-columns:repeat(2,1fr)}}
 .cb-root .tcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:18px}
 .cb-root .tcard-h{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
-.cb-root .tcard-h h3{font-size:15.5px;font-weight:800}
+.cb-root .tcard-h .hd{font-size:15.5px;font-weight:800}
 .cb-root .bar{margin-top:10px}
 .cb-root .bar-l{display:flex;justify-content:space-between;gap:10px;font-size:13px}
 .cb-root .bar-l b{font-weight:700}
@@ -202,7 +202,7 @@ color-scheme: light;
 .cb-root .check-grid{display:grid;gap:14px}
 @container cb (min-width:700px){.cb-root .check-grid{grid-template-columns:repeat(2,1fr)}}
 .cb-root .ccard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:16px}
-.cb-root .ccard h3{font-size:14.5px;font-weight:800;color:var(--accent);margin-bottom:8px}
+.cb-root .ccard .hd{font-size:14.5px;font-weight:800;color:var(--accent);margin-bottom:8px}
 .cb-root .ccard label{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;padding:6px 0;font-size:14px;cursor:pointer}
 .cb-root .ccard input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--green)}
 .cb-root .ccard input:checked+span{color:var(--muted);text-decoration:line-through}
@@ -230,14 +230,14 @@ color-scheme: light;
 <div class="wrap">
 <header class="hero">
 <p class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c1 4 5 5 5 10a5 5 0 0 1-10 0c0-3 2-4 2-7 2 1 3 3 3 5"/></svg>High-end gastronomy masterclass</p>
-<h1>세계에서 가장 비싼 붉은 보석:<br><em>까라비네로</em><span class="en">(Carabinero)</span><br>마스터클래스</h1>
+<div class="hd" role="heading" aria-level="2">세계에서 가장 비싼 붉은 보석:<br><em>까라비네로</em><span class="en">(Carabinero)</span><br>마스터클래스</div>
 <p>한 마리 2~4만 원을 호가하는 스페인 심해 홍새우의 모든 것. 은수저, 정호영 셰프, 장호준 셰프, 최경훈 셰프의 필살기 레시피와 과학적 조리 테크닉을 인터랙티브하게 탐색하세요.</p>
 <div class="divider">◆ CARABINERO GASTRONOMY ARCHIVE ◆</div>
 <div class="stats">
-<div class="stat"><div class="stat-top"><span class="badge r">궁극의 식재료</span><span class="stat-big">10×</span></div><h3>일반 새우 대비 10배 감칠맛</h3><p>심해 1,000m의 수압을 견딘 진홍빛 체색. 간장게장을 연상시키는 붉은 내장은 어떠한 조미료로도 대체 불가한 농축된 바다의 감칠맛을 품고 있습니다.</p></div>
-<div class="stat"><div class="stat-top"><span class="badge g">요낳대 결승 우승작</span><span class="stat-big">17만</span></div><h3>장호준 셰프 육수 &amp; 텐동</h3><p>'미니 요낳대' 결승에서 맛수령을 제압한 전설의 텐동. 장호준 셰프에게 전수받은 10분 고농축 다시마 육수와 식히며 간을 배게 하는 조림 과학의 결정체.</p></div>
-<div class="stat"><div class="stat-top"><span class="badge">냉장고를 부탁해</span><span class="stat-big">9★</span></div><h3>정호영 셰프의 보석 타르타르</h3><p>권성준 셰프(나폴리 맛피아)를 사로잡은 '바이럴 원모타임'. 샤인머스캣의 단맛, 백합 육수 토사즈 쥬레의 산미와 감칠맛, 바삭한 호박꽃 튀김의 완벽한 앙상블.</p></div>
-<div class="stat"><div class="stat-top"><span class="badge r">파인다이닝 비법</span><span class="stat-big">5min</span></div><h3>최경훈 셰프의 여열 레스팅 &amp; 훈연</h3><p>"다 익으면 단맛이 빠져나간다." 손가락 끝으로 단단함을 감지하는 순간 불을 끄는 레스팅의 미학, 그리고 찻잎 도칭을 통한 5분 녹차 훈연 인퓨전.</p></div>
+<div class="stat"><div class="stat-top"><span class="badge r">궁극의 식재료</span><span class="stat-big">10×</span></div><div class="hd" role="heading" aria-level="3">일반 새우 대비 10배 감칠맛</div><p>심해 1,000m의 수압을 견딘 진홍빛 체색. 간장게장을 연상시키는 붉은 내장은 어떠한 조미료로도 대체 불가한 농축된 바다의 감칠맛을 품고 있습니다.</p></div>
+<div class="stat"><div class="stat-top"><span class="badge g">요낳대 결승 우승작</span><span class="stat-big">17만</span></div><div class="hd" role="heading" aria-level="3">장호준 셰프 육수 &amp; 텐동</div><p>'미니 요낳대' 결승에서 맛수령을 제압한 전설의 텐동. 장호준 셰프에게 전수받은 10분 고농축 다시마 육수와 식히며 간을 배게 하는 조림 과학의 결정체.</p></div>
+<div class="stat"><div class="stat-top"><span class="badge">냉장고를 부탁해</span><span class="stat-big">9★</span></div><div class="hd" role="heading" aria-level="3">정호영 셰프의 보석 타르타르</div><p>권성준 셰프(나폴리 맛피아)를 사로잡은 '바이럴 원모타임'. 샤인머스캣의 단맛, 백합 육수 토사즈 쥬레의 산미와 감칠맛, 바삭한 호박꽃 튀김의 완벽한 앙상블.</p></div>
+<div class="stat"><div class="stat-top"><span class="badge r">파인다이닝 비법</span><span class="stat-big">5min</span></div><div class="hd" role="heading" aria-level="3">최경훈 셰프의 여열 레스팅 &amp; 훈연</div><p>"다 익으면 단맛이 빠져나간다." 손가락 끝으로 단단함을 감지하는 순간 불을 끄는 레스팅의 미학, 그리고 찻잎 도칭을 통한 5분 녹차 훈연 인퓨전.</p></div>
 </div>
 </header>
 <!-- RECIPES + TIMER -->
@@ -280,7 +280,7 @@ color-scheme: light;
 <div class="tabs" role="tablist" aria-label="영상 선택" id="vTabs"></div>
 <div class="vwrap">
 <div class="player" id="player"><div id="yt"></div></div>
-<div class="vmeta"><h3 id="vTitle"></h3><a class="badge" id="vLink" href="https://www.youtube.com/watch?v=YRSXW8SGiEg" target="_blank" rel="noopener">YouTube ↗</a></div>
+<div class="vmeta"><div class="hd" id="vTitle" role="heading" aria-level="3"></div><a class="badge" id="vLink" href="https://www.youtube.com/watch?v=YRSXW8SGiEg" target="_blank" rel="noopener">YouTube ↗</a></div>
 <div class="stamps">
 <div class="stamps-h"><span>핵심 구간 타임스탬프</span><span id="vCount"></span></div>
 <div id="stamps"></div>
@@ -487,10 +487,10 @@ function renderRecipe(dir){
   $('#prev').disabled = cur===0; $('#next').disabled = cur===RECIPES.length-1;
   recipeEl.innerHTML = `
     <div class="badges">${r.badges.map(([t,k])=>`<span class="badge ${k}">${esc(t)}</span>`).join('')}</div>
-    <h3>${esc(r.title)}</h3>
+    <div class="hd" role="heading" aria-level="3">${esc(r.title)}</div>
     <blockquote class="quote">"${esc(r.quote)}"<cite>— ${esc(r.cite)}</cite></blockquote>
     <ol class="steps">${r.steps.map(([h,t,tm],k)=>`<li><span class="sn">${k+1}</span><div><b>${esc(h)}:</b> ${esc(t)}${tm?`<div class="tchips">${tm.map(ti=>`<button class="tchip" data-t="${ti}">${ICON.clock}${fmt(r.timers[ti].s)} ${esc(r.timers[ti].n)}</button>`).join('')}</div>`:''}</div></li>`).join('')}</ol>
-    <div class="spec"><h4>CULINARY SPECIFICATION</h4><dl>${r.spec.map(([k,v])=>`<div class="row"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></div>`;
+    <div class="spec"><div class="spec-h">CULINARY SPECIFICATION</div><dl>${r.spec.map(([k,v])=>`<div class="row"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></div>`;
   recipeEl.setAttribute('aria-label', r.title);
   recipeEl.classList.remove('in-r','in-l'); void recipeEl.offsetWidth; if (dir) recipeEl.classList.add(dir);
 }
@@ -647,7 +647,7 @@ window.onYouTubeIframeAPIReady = function(){
 })();
 /* ---------------- TASTE ---------------- */
 $('#legend').innerHTML = Object.values(CATS).map(([n,v])=>`<span><i style="background:var(${v})"></i>${n}</span>`).join('');
-$('#taste').innerHTML = TASTE.map(c => `<div class="tcard"><div class="tcard-h"><h3>${esc(c.t)}</h3><span class="badge ${c.b[1]}">${esc(c.b[0])}</span></div>
+$('#taste').innerHTML = TASTE.map(c => `<div class="tcard"><div class="tcard-h"><div class="hd" role="heading" aria-level="3">${esc(c.t)}</div><span class="badge ${c.b[1]}">${esc(c.b[0])}</span></div>
   ${c.bars.map(([cat,lab,v]) => `<div class="bar"><div class="bar-l"><span class="cat"><i style="background:var(${CATS[cat][1]})"></i><b>${CATS[cat][0]}</b> · ${esc(lab)}</span><span class="v">${v}%</span></div><div class="track" role="img" aria-label="${CATS[cat][0]} ${v}%"><div class="fill" data-v="${v}" style="background:var(${CATS[cat][1]})"></div></div></div>`).join('')}
   <p>${esc(c.note)}</p></div>`).join('');
 const fills = document.querySelectorAll('#taste .fill');
@@ -657,7 +657,7 @@ if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: re
 } else growBars();
 /* ---------------- CHECKLIST ---------------- */
 let checked = store.get('cb.checks', {});
-$('#checks').innerHTML = CHECKS.map(([h,items],a)=>`<div class="ccard"><h3>${esc(h)}</h3>${items.map((t,b)=>`<label><input type="checkbox" data-k="${a}-${b}"><span>${esc(t)}</span></label>`).join('')}</div>`).join('');
+$('#checks').innerHTML = CHECKS.map(([h,items],a)=>`<div class="ccard"><div class="hd" role="heading" aria-level="3">${esc(h)}</div>${items.map((t,b)=>`<label><input type="checkbox" data-k="${a}-${b}"><span>${esc(t)}</span></label>`).join('')}</div>`).join('');
 const boxes = [...document.querySelectorAll('#checks input')];
 function paintChecks(){ boxes.forEach(b=>b.checked=!!checked[b.dataset.k]); const n = boxes.filter(b=>b.checked).length; $('#cText').textContent = n + ' / ' + boxes.length + ' 완료'; $('#cFill').style.width = (n/boxes.length*100) + '%'; }
 $('#checks').addEventListener('change', e => { const b = e.target; checked[b.dataset.k] = b.checked; store.set('cb.checks', checked); paintChecks(); });
